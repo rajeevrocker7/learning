@@ -12,7 +12,7 @@ public class ParanthesisSolution {
               stk.push(c);
           }else {
               char t = stk.peek();
-              if ((c == '}' && t == '{') | (c == ']' && t == '[') | (c == ')' && c == '(')) {
+              if ((c == '}' && t == '{') | (c == ']' && t == '[') | (c == ')' && t == '(')) {
                   stk.pop();
               }
           }
